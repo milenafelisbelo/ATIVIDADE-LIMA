@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação dos Jogos</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1>Cadastro da Relação dos Jogos</h1>
+    <form action="" method="post">
+        <label for="modalidade">Modalidade:</label>
+        <select id="modalidade" name="modalidade">
+            <option value="volei femenino">Vôlei Femenino</option>
+            <option value="volei masculino">Vôlei Masculino</option>
+            <option value="futsal femenino">Futsal Femenino</option>
+            <option value="futsal masculino">Futsal Masculino</option>
+            <option value="society">Society</option>
+            <option value="dama">Dama</option>
+            <option value="xadrez">Xadrez</option>
+            <option value="futmesa">Futmesa</option>
+            <option value="badminton">Badminton</option>
+        </select><br><br>
+        <label for="data">Data do Jogo:</label>
+        <input type="date" id="data" name="data" required><br><br>
+        <label for="time1">Time 1:</label>
+        <input type="text" id="time1" name="time1" placeholder="Nome do Time 1" required><br><br>
+        <label for="time2">Time 2:</label>
+        <input type="text" id="time2" name="time2" placeholder="Nome do Time 2" required><br><br>
+        <label for="placar1">Placar Time 1:</label>
+        <input type="number" id="placar1" name="placar1" min="0" required><br><br>
+        <label for="placar2">Placar Time 2:</label>
+        <input type="number" id="placar2" name="placar2" min="0" required><br><br>
+        <input type="submit" value="Cadastrar Jogo">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
